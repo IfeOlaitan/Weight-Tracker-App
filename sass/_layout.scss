@@ -1,0 +1,83 @@
+.container {
+    max-width: 120rem;
+    margin: 6rem auto;
+    background-color: #fff;
+    box-shadow: var(--shadow-dark);
+    overflow: hidden;
+    
+    @media only screen and (max-width: $bp-large) {
+         margin: 0;
+    }
+}
+
+.contents {
+    padding: 2rem auto;
+    width: 100%;
+    height: 55rem;
+
+    @media only screen and (max-width: $bp-large) {
+        height: 60rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+       height: 90rem;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  
+
+    &__left {
+        background-image: linear-gradient(rgba(#ff7315, 0.4), rgba(#ff7315, 0.4)), url('/img/waist.jpg');
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        grid-row: 1 / span 2;
+
+        @media only screen and (max-width: $bp-large) {
+            
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            height: 40em;
+        }
+    }
+
+    &__right {
+        background-color: var(--color-primary);
+
+        display: grid;
+        grid-row: 1 / span 2;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 3 / 4;
+            grid-column: 1 / 3;
+            height: 60rem;
+        }
+
+        &--body {
+            background-color: #fff;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 2rem 2rem;
+            padding-left: 5rem;
+
+            grid-row: 2 / span 4;
+            grid-column: 1 / span 6;
+            
+            display: grid;
+            align-content: center;
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 0 2rem;
+            }
+        }
+    }
+}
+

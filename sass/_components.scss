@@ -1,0 +1,115 @@
+.icon {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.btn {
+    color: var(--color-orange);
+
+    &__add,
+    &__del {
+        border: none;
+        background: none;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+
+    &:active { transform: translateY(2px); }
+}
+
+.contents {
+
+    &__left {
+        p {
+            font-size: 6rem;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10rem;
+            line-height: 1.8;
+            font-weight: 700;
+            animation: moveInLeft 2s ease-out;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 5rem;
+                margin-top: 7rem;
+                line-height: 1.5;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    &__right {
+        h3 {
+            font-size: 2rem;
+            line-height: 1;
+            margin: 5rem 0 0 1rem;
+            display: inline-block;
+        }
+    }
+}
+
+.weight {
+
+    &__add {
+
+        &--text {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: var(--color-orange);
+            margin-bottom: .7rem;
+        }
+
+        &--input {
+            width: 45%;
+            margin-bottom: 5rem;
+            margin-right: 2rem;
+            padding: .5rem 1rem;
+            
+    
+            &:focus {
+                outline: none;
+                border: 1px solid var(--color-orange);
+            }
+        }
+    }
+
+    &__del {
+        
+        &--text {
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--color-orange);
+            margin-bottom: .6rem;
+            text-transform: capitalize;
+        }
+
+        .item {
+            & > * {
+                display: inline-block;
+                text-align: center;
+            }
+
+            &__value {
+                font-size: 1.5rem;
+                margin-right: 3rem;
+                font-weight: 400;
+            }
+
+            &__date {
+                font-size: 1.15rem;
+                margin-right: 2rem;
+                font-weight: 300;          
+            }
+
+            &__del {
+                text-align: center;
+            }
+        }
+    }
+}

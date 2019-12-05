@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weight Tracker</title>
+</head>
+<body>
+    <div class="container">
+       <div class="contents">
+           <div class="contents__left">
+               <p class="contents__left--text">Keep track of your weight daily</p>
+           </div>
+           <div class="contents__right">
+               <h3>Weight Tracker</h3>
+               <div class="contents__right--body">
+                    <div class="weight__add">
+                        <label for="add" class="weight__add--text">Input your current weight</label>
+                        <input type="text" id="add" class="weight__add--input" placeholder="Current Weight in k.g">
+                        <button class="btn btn__add"><ion-icon name="add-circle-outline" class="icon"></ion-icon></button>
+                    </div>
+
+
+                    <div class="weight__del">
+                        <p class="weight__del--text">Previous weights</p>
+                        <div class="weight-list">
+                            <div class="item" id="weight-0">
+                                <div class="item__value">80kg</div>
+                                <div class="item__date">December 2, 2019</div>
+                                <div class="item__del">
+                                    <button class="prev-weight btn btn__del"><ion-icon name="close-circle-outline" class="icon"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="item" id="weight-0">
+                                    <div class="item__value">84kg</div>
+                                    <div class="item__date">November 25, 2019</div>
+                                    <div class="item__del">
+                                        <button class="prev-weight btn btn__del"><ion-icon name="close-circle-outline" class="icon"></ion-icon></button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

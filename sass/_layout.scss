@@ -29,7 +29,7 @@
   
 
     &__left {
-        background-image: linear-gradient(rgba(#ff7315, 0.4), rgba(#ff7315, 0.4)), url(../img/waist.jpg) no-repeat center/cover;
+        background-image: linear-gradient(rgba(#ff7315, 0.4), rgba(#ff7315, 0.4)), url("../img/waist.jpg") no-repeat center/cover;
         width: 100%;
 
         grid-row: 1 / span 2;

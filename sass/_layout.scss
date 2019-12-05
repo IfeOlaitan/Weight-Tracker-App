@@ -29,10 +29,8 @@
   
 
     &__left {
-        background-image: linear-gradient(rgba(#ff7315, 0.4), rgba(#ff7315, 0.4)), url(../img/waist.jpg);
+        background-image: linear-gradient(rgba(#ff7315, 0.4), rgba(#ff7315, 0.4)), url(../img/waist.jpg) no-repeat center/cover;
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
 
         grid-row: 1 / span 2;
 
